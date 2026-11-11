@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5d0a0f">
+  <meta name="description" content="Nisha and Dipesh invite you to celebrate their wedding on 16th February 2027.">
+  <title>Nisha &amp; Dipesh | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="intro" id="intro" aria-label="Open the wedding invitation">
+    <p class="eyebrow intro__eyebrow">A celebration of love</p>
+    <div class="envelope" id="envelope">
+      <div class="envelope__back"></div>
+      <div class="envelope__letter">
+        <img class="letter-logo" src="assets/images/nd-logo.png" alt="Nisha and Dipesh logo">
+        <span class="letter-caption">You are invited</span>
+      </div>
+      <div class="envelope__front"></div>
+      <div class="envelope__flap"></div>
+      <div class="envelope__seal" aria-hidden="true"><img src="assets/images/nd-logo.png" alt=""></div>
+    </div>
+    <p class="intro__names">Nisha <span>&</span> Dipesh</p>
+    <p class="intro__date">With love, we invite you to celebrate our wedding</p>    <p class="landscape-hint">Switch to landscape mode, because this celebration deserves the big screen!</p>
+    <button class="button button--gold intro__open" id="openInvitation">Open invitation <span aria-hidden="true">↗</span></button>
+    <p class="intro__hint">Tap to unfold your invitation</p>
+  </div>
+
+  <main id="site" class="site" aria-hidden="true">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Back to top">N <span>&</span> D</a>
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="#home">Invitation</a>
+        <a href="#story">Our story</a>
+        <a href="#events">Events</a>
+        <a href="#venue">Venue</a>
+      </nav>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+        <span class="music-toggle__icon" aria-hidden="true">♫</span>
+        <span id="musicLabel">Play music</span>
+      </button>
+    </header>
+
+    <!-- Add your exported slide image to assets/images and update each src below.
+         Images are displayed edge-to-edge with object-fit: cover. -->
+    <section class="full-slide hero-slide hero-slide--artwork" id="home" aria-label="Wedding invitation">
+      <img class="slide-image hero-artwork" src="assets/images/main-slide.jpg" alt="Nisha and Dipesh wedding invitation, 16th February 2027">
+    </section>
+
+    <section class="countdown section" id="countdown">
+      <p class="eyebrow">The countdown begins</p>
+      <h2>Until <em>forever</em></h2>
+      <div class="countdown__grid" id="countdownTimer" data-date="2027-02-16T00:00:00+05:30">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="full-slide story-slide" id="story" aria-label="Our story">
+      <img class="slide-image" src="assets/images/our-story.jpg" alt="Our story slide">
+    </section>
+
+    <section class="events" id="events" aria-label="Wedding celebrations">
+      <article class="full-slide event-slide" id="sangeet">
+        <img class="slide-image" src="assets/images/sangeet.jpg" alt="Sangeet celebration slide">
+      </article>
+
+      <article class="full-slide event-slide" id="haldi">
+        <img class="slide-image" src="assets/images/haldi.jpg" alt="Haldi celebration slide">
+      </article>
+
+      <article class="full-slide event-slide" id="engagement">
+        <img class="slide-image" src="assets/images/engagement.jpg" alt="Engagement celebration slide">
+      </article>
+
+      <article class="full-slide event-slide" id="baarat">
+        <img class="slide-image" src="assets/images/baarat-varmala.jpg" alt="Baarat and varmala celebration slide">
+      </article>
+
+      <article class="full-slide event-slide" id="reception">
+        <img class="slide-image" src="assets/images/reception.jpg" alt="Wedding reception slide">
+      </article>
+    </section>
+
+
+    <section class="full-slide thankyou-slide" id="thank-you" aria-label="Thank you">
+      <img class="slide-image" src="assets/images/thank-you.jpg" alt="Thank you slide">
+    </section>
+
+    <section class="venue section" id="venue">
+      <p class="eyebrow">Find your way to the celebrations</p>
+      <h2>Three places, <em>one celebration.</em></h2>
+      <p class="section-intro">Select a venue card to open its location in Google Maps.</p>
+
+      <a class="venue-location venue-location--link" href="https://www.google.com/maps/search/?api=1&query=H684%2BQRR%2C%20Jedhe%20Colony%2C%20Rangargalli%2C%20Sangamner%2C%20Maharashtra%20422605" target="_blank" rel="noopener noreferrer" aria-label="Open map directions for Laxminarayan Mandir">
+        <div class="venue__card">
+          <div class="venue__monogram">01</div>
+          <div class="venue__details"><strong>Laxminarayan Mandir</strong><span>H684+QRR, Jedhe Colony, Rangargalli, Sangamner, Maharashtra 422605</span><small>Sangeet · 15 February · 9 PM onwards</small></div>
+          <span class="text-link">Open in Google Maps ↗</span>
+        </div>
+      </a>
+
+      <a class="venue-location venue-location--link" href="https://www.google.com/maps/search/?api=1&query=Kuber%20Lawns%2C%20Sangamner%2C%20Maharashtra" target="_blank" rel="noopener noreferrer" aria-label="Open map directions for Kuber Lawns">
+        <div class="venue__card">
+          <div class="venue__monogram">02</div>
+          <div class="venue__details"><strong>Kuber Lawns</strong><span>Sangamner, Maharashtra</span><small>Haldi · 16 February · 10 AM | Engagement · 1 PM | Baarat & Varmala · 7 PM onwards</small></div>
+          <span class="text-link">Open in Google Maps ↗</span>
+        </div>
+      </a>
+
+      <a class="venue-location venue-location--link" href="https://www.google.com/maps/search/?api=1&query=Pipla%20Fata%2C%20Square%2C%20Hudkeshwar%20Road%2C%20Chandrakiran%20Nagar%2C%20Nagpur%2C%20Maharashtra%20440037" target="_blank" rel="noopener noreferrer" aria-label="Open map directions for Ashok Vatika Celebration Lawns">
+        <div class="venue__card">
+          <div class="venue__monogram">03</div>
+          <div class="venue__details"><strong>Ashok Vatika Celebration Lawns</strong><span>Pipla Fata, Square, Hudkeshwar Road, Chandrakiran Nagar, Nagpur, Maharashtra 440037</span><small>Reception · 19 February · 7 PM onwards</small></div>
+          <span class="text-link">Open in Google Maps ↗</span>
+        </div>
+      </a>
+      <p class="map-note"></p>
+    </section>
+
+    <footer class="footer">
+      <img class="footer__logo" src="assets/images/nd-logo.png" alt="Nisha and Dipesh logo">
+      <p>Made with love. Celebrated with you.</p>
+    </footer>
+  </main>
+
+  <audio id="weddingMusic" src="assets/audio/wedding-music.mp3" loop preload="auto"></audio>
+  <script src="js/script.js"></script>
+</body>
+</html>
